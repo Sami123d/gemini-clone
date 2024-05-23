@@ -1,9 +1,138 @@
 .main{
+min-height: 100vh;
+position: relative;
+flex: 1;
+}
+.main .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.nav .nav-title{
+    font-size: 22px;
+    font-weight: 350;
+    background: none;
+}
+.nav-title:focus{
+    border: none;
+}
+.dropdown-menu{
+    font-size: 12px !important;
+    padding: 10px 10px 10px 0px;
 
 }
+.dropdown-menu li{
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.dropdown-item{
+background-color: none;
+}
+.dropdown-item:hover{
+    background-color: none !important;
+}
+.nav-img-with-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-img-with-btn button{
+    padding: 10px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3px 6px!important;
+}
+.main .nav img{
+width: 45px;
+height: 45px;
+object-fit: cover;
+border-radius: 50%; 
+    
+}
+.main-container{
+    max-width: 900px;
+    margin: auto;      
+}
+.main-container .greet{
+    margin: 50px 0px;
+    font-size: 56px;
+    font-weight: 500;
+    color: #C4C7C5;
 
-@media screen and (max-width: 900px) {
-    .main{
-        
-    }
+}
+.main-container .greet p{margin: 1px;}
+.main-container .greet span{
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-single{
+    width: 200px;
+    height: 200px;
+    background-color: #F0F4F9;
+    border-radius: 20px;
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.card-single:hover{
+    background-color: rgb(230, 234, 241);;
+}
+.logo-card{
+    display: flex;
+    justify-content: flex-end;
+}
+.logo-card-wrapper{
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.cards-main{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+
+}
+.input-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #F0F4F9;
+    padding: 10px 20px;
+    border-radius: 50px;
+
+}
+.input-box input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.input-box img{
+    width: 25px;
+}
+.main-bottom{
+    max-width: 900px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+   width: 100%;
+   padding: 0px 20px;
 }

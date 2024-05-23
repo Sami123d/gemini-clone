@@ -13,8 +13,13 @@ import message_icon from './message_icon.png'
 import code_icon from './code_icon.png'
 import send_icon from './send_icon.png'
 import gemini_icon from './gemini_icon.png'
-
+import profile from './6.jpeg';
+import gemini_purple from "./gemini_clone_purple.svg";
+import gemini_blue from "./gemini_blue.svg";
 export const assets = {
+    gemini_blue,
+    gemini_purple,
+    profile,
     history_icon,
     menu_icon,
     plus_icon,
