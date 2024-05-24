@@ -7,12 +7,16 @@ flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 8px 12px;
+    background-color: white;
 }
 .nav .nav-title{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 350;
     background: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 .nav-title:focus{
     border: none;
@@ -59,13 +63,13 @@ border-radius: 50%;
     margin: auto;      
 }
 .main-container .greet{
-    margin: 50px 0px;
-    font-size: 56px;
+  margin: 50px 0px;
+    font-size: 3.5rem;
     font-weight: 500;
     color: #C4C7C5;
 
 }
-.main-container .greet p{margin: 1px;}
+
 .main-container .greet span{
     background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
     -webkit-background-clip: text;
@@ -100,11 +104,10 @@ border-radius: 50%;
     justify-content: center;
 }
 .cards-main{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-
-
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
 }
 .input-box{
     display: flex;
@@ -135,4 +138,19 @@ border-radius: 50%;
     bottom: 0;
    width: 100%;
    padding: 0px 20px;
+}
+.main-container .bottom-info{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 12px auto;
+    text-align: center;
+    color: #444746;
+    cursor: default;
+}
+.bottom-info p {
+    margin: 0;
+}
+.bottom-info span{
+    border-bottom: 1px solid black;
+    cursor: pointer;
 }

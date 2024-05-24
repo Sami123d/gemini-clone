@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./main.css";
 import { assets } from "../../assets/assets";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import { context } from "../../App";
+
 const Main = () => {
+  const {
+    input,
+    setInput,
+    prevPrompts,
+    setprevPrompts,
+    recentPrompt,
+    setRecentPrompt,
+    onSend,
+    showResult,
+    loading,
+    resultData,
+  } = useContext(context);
+
   return (
     <div className="main">
       <div className="nav">
@@ -82,10 +95,10 @@ const Main = () => {
       </div>
       <div className="main-container">
         <div className="greet">
-          <p>
+          <h1>
             <span>Hello, Dev</span>
-          </p>
-          <p>How can I help you today?</p>
+          </h1>
+          <h1>How can I help you today?</h1>
         </div>
         <div className="cards-main">
           <div className="card-single">
@@ -132,7 +145,7 @@ const Main = () => {
             <div className="logo-card">
               <div className="logo-card-wrapper">
                 <img
-                  src={assets.history_icon}
+                  src={assets.code_icon}
                   style={{ width: "25px" }}
                   alt=""
                   srcset=""
@@ -142,22 +155,23 @@ const Main = () => {
           </div>
         </div>
         <div className="main-bottom">
-        <div className="input-box">
-          <input type="text" placeholder="Enter a prompt here"/>
-          <div>
-             <img src={assets.gallery_icon} alt="" srcset="" />
-          <img src={assets.mic_icon} alt="" srcset="" />
-          <img src={assets.send_icon} alt="" srcset="" />
+          <div className="input-box">
+            <input type="text" onChange={(e)=>setInput(e.target.value)} value={input} placeholder="Enter a prompt here" />
+            <div>
+              <img src={assets.gallery_icon} alt="" srcset="" />
+              <img src={assets.mic_icon} alt="" srcset="" />
+              <img onClick={()=>onSend()} src={assets.send_icon}  alt="" srcset="" />
+            </div>
           </div>
-         
+          <div className="bottom-info">
+            <p>
+              Gemini may display inaccurate info, including about people, so
+              double-check its responses.{" "}
+              <span>Your privacy & Gemini Apps</span>
+            </p>
+          </div>
         </div>
-        <div className="bottom-info">
-        <p>Gemini may display inaccurate info, including about people, so double-check its responses. <span>Your privacy & Gemini Apps</span></p>
       </div>
-      </div>
-      </div>
-    
-      
     </div>
   );
 };

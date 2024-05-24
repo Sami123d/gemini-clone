@@ -23,6 +23,9 @@ margin-top: 30px;
 
 cursor: pointer;
 }
+.sidebar-chat p{
+  margin: 0;
+}
 .recent-title{
 margin: 14px;
 cursor: default;
@@ -35,6 +38,9 @@ cursor: default;
   margin-top: 30px;
   padding: 13px 15px;
   border-radius: 28px;
+}
+.recentEntry p{
+  margin: 0;
 }
 .sidebar-chat img{
   width: 16px;
