@@ -35,7 +35,7 @@ cursor: default;
   display: flex ;
   gap: 10px;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 8px;
   padding: 13px 15px;
   border-radius: 28px;
 }
@@ -78,5 +78,32 @@ cursor: pointer;
 }
 .sidebar-recent{
   margin-top: 19px;
+  animation: fadeIn 1.5s;
 }
 
+.recent-entries{
+  margin-top: 2px;
+}
+.recent-cont{
+  overflow-y: scroll;
+  height: 191px;
+}
+.recent-cont::-webkit-scrollbar {
+  width: 9px; /* Scrollbar width */
+}
+
+/* Track */
+.recent-cont::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+/* Handle */
+.recent-cont::-webkit-scrollbar-thumb {
+  background: #c9c8c8; /* Handle color */
+  border-radius: 6px; /* Handle border radius */
+}
+@media (max-width: 600px){
+  .sidebar{
+    display: none;
+  }
+}
