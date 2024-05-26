@@ -268,3 +268,8 @@ position: relative;
 }
 .nav-img-with-btn button{ display: none;}
 }
+@media(min-width: 600px){
+    .recent-title{
+        margin: 14px 150px 14px 14px;
+    }
+}

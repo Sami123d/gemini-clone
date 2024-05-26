@@ -32,7 +32,7 @@ const Sidebar = () => {
         <div className="" style={{ margin: "9px" }}>
           <div onClick={()=>{newChat()}} className="sidebar-chat">
             <img src={assets.plus_icon} />
-            {extended ? <p>New chat</p> : null}
+            {extended ? <p className="new-chat-p">New chat</p> : null}
           </div>
           {extended ? (
             <div className="sidebar-recent">

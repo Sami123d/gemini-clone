@@ -4,6 +4,10 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #f0f4f9;
+    -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none;    /* For Firefox */
+  -ms-user-select: none;     /* For Internet Explorer/Edge */
+  user-select: none;
 }
 
 .sidebar-top img{
@@ -38,15 +42,23 @@ cursor: default;
   margin-top: 8px;
   padding: 13px 15px;
   border-radius: 28px;
+  
 }
 .recentEntry p{
   margin: 0;
+  animation: fadeIn 1.5s;
 }
 .sidebar-chat img{
   width: 16px;
 }
+.new-chat-p{
+animation: fadeIn 1.5s;
+}
 .menu-icon{
- 
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none;    /* For Firefox */
+  -ms-user-select: none;     /* For Internet Explorer/Edge */
+  user-select: none;  
     width: 50px;
   margin: 9px;
   cursor: pointer;
@@ -61,9 +73,14 @@ cursor: default;
 }
 .sidebar-bottom {
   margin: 9px;
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none;    /* For Firefox */
+  -ms-user-select: none;     /* For Internet Explorer/Edge */
+  user-select: none; 
 }
 .sidebar-bottom img{
     width: 20px;
+   
 }
 
 
