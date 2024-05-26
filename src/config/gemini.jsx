@@ -2,7 +2,7 @@
 
 /*
  * Install the Generative AI SDK
- *
+ 
  * $ npm install @google/generative-ai
  *
  * See the getting started guide for more information
