@@ -22,9 +22,9 @@ const Main = () => {
     <div className="main">
       <div className="nav">
         {/* nav  title */}
-        <div class="dropdown">
+        <div className="dropdown">
           <a
-            class="btn nav-title dropdown-toggle"
+            className="btn nav-title dropdown-toggle"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
@@ -33,14 +33,14 @@ const Main = () => {
             Gemini
           </a>
 
-          <ul class="dropdown-menu " style={{ backgroundColor: "#F8F9FA" }}>
+          <ul className="dropdown-menu " style={{ backgroundColor: "#F8F9FA" }}>
             <li style={{ display: "flex" }}>
               <img
                 style={{ width: "14px", height: "14px" }}
                 src={assets.gemini_blue}
                 alt=""
               />
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Gemini
               </a>
               <span style={{ paddingRight: "2px", cursor: "pointer" }}>
@@ -54,19 +54,19 @@ const Main = () => {
                 alt=""
               />
 
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Gemini Advanced
               </a>
               <button
                 type="button"
-                class="btn btn-secondary"
+                className="btn btn-secondary"
                 style={{ fontSize: "13px", padding: "3px", marginRight: "2px" }}
               >
                 Upgrade
               </button>
             </li>
             <li>
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Something else here
               </a>
             </li>
@@ -75,7 +75,7 @@ const Main = () => {
         <div className="nav-img-with-btn">
           <button
             type="button"
-            class="btn "
+            className="btn "
             style={{
               fontSize: "13px",
               padding: "3px",
@@ -90,7 +90,7 @@ const Main = () => {
             />{" "}
             Try Gemini Advanced
           </button>
-          <img src={assets.profile} alt="" srcset="" />
+          <img src={assets.profile} alt="" />
         </div>
       </div>
       <div className="main-container">
@@ -111,7 +111,7 @@ const Main = () => {
                       src={assets.mic_icon}
                       style={{ width: "25px" }}
                       alt=""
-                      srcset=""
+                      
                     />
                   </div>{" "}
                 </div>
@@ -124,7 +124,7 @@ const Main = () => {
                       src={assets.bulb_icon}
                       style={{ width: "25px" }}
                       alt=""
-                      srcset=""
+                   
                     />
                   </div>{" "}
                 </div>
@@ -137,7 +137,7 @@ const Main = () => {
                       src={assets.compass_icon}
                       style={{ width: "25px" }}
                       alt=""
-                      srcset=""
+                     
                     />
                   </div>{" "}
                 </div>
@@ -150,7 +150,7 @@ const Main = () => {
                       src={assets.code_icon}
                       style={{ width: "25px" }}
                       alt=""
-                      srcset=""
+                     
                     />
                   </div>{" "}
                 </div>
@@ -160,12 +160,12 @@ const Main = () => {
         ) : (
           <div className="result">
             <div className="result-title">
-              <img src={assets.profile} alt="" srcset="" />
+              <img src={assets.profile} alt="" />
               <p>{recentPrompt}</p>
             </div>
             <div className="result-data">
               <div>
-                <img src={assets.gemini_blue} className={loading ? `result-data-logo` :`result-data-logo2`}  alt="" srcset="" />
+                <img src={assets.gemini_blue} className={loading ? `result-data-logo` :`result-data-logo2`}  alt="" />
               </div>
              
               {loading  ? <div className="loader"><hr /><hr /><hr /></div> :  <p dangerouslySetInnerHTML={{ __html: resultData }}></p>}
@@ -182,8 +182,8 @@ const Main = () => {
               placeholder="Enter a prompt here"
             />
             <div>
-              <img src={assets.gallery_icon} alt="" srcset="" />
-              <img src={assets.mic_icon} alt="" srcset="" />
+              <img src={assets.gallery_icon} alt="" />
+              <img src={assets.mic_icon} alt=""/>
              {input ? <img
                 onClick={() => onSend()}
                 src={assets.send_icon}
