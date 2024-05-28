@@ -83,12 +83,17 @@ border-radius: 50%;
   padding: 20px;
   margin-bottom: 124px;
   
+
 }
 .card-single{
     
     height: 200px;
+
     background-color: #F0F4F9;
     border-radius: 20px;
+
+
+    
     padding: 17px;
     display: flex;
     flex-direction: column;

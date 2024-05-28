@@ -25,6 +25,10 @@ yarn-error.log*
 *.sublime-workspace
 
 # macOS files
+
+
+
+
 .DS_Store
 
 # Windows files

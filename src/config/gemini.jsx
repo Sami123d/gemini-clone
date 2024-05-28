@@ -76,6 +76,12 @@ import {
           ],
         },
         {
+
+
+
+
+
+          
           role: "model",
           parts: [
             {text: "I am a text-based AI, so I can't directly generate images. However, I can help you find images or create descriptions that can be used to generate images with other tools: \n\n* **Describe what you want:** Tell me what kind of image you're looking for, and I can help you find relevant images online. \n* **Provide image prompts:** I can help you craft detailed prompts that you can use with image generation tools like DALL-E, Midjourney, or Stable Diffusion. These tools use your text descriptions to create images. \n\nDo you have any specific ideas for images you'd like to create? Let me know! \n"},
@@ -88,5 +94,10 @@ import {
    
     return result.response.text();
   }
+  
+
+
+
+
   
   export default run;
