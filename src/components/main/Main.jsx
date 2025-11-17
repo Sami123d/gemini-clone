@@ -176,11 +176,17 @@ const Main = () => {
         <div className="main-bottom">
           <div className="input-box">
             <input
-              type="text"
-              onChange={(e) => setInput(e.target.value)}
-              value={input}
-              placeholder="Enter a prompt here"
-            />
+  type="text"
+  onChange={(e) => setInput(e.target.value)}
+  value={input}
+  placeholder="Enter a prompt here"
+  onKeyDown={(e) => {
+    if (e.key === "Enter" && input.trim() !== "") {
+      onSend();
+    }
+  }}
+/>
+
             <div>
               <img src={assets.gallery_icon} alt="" />
               <img src={assets.mic_icon} alt=""/>
