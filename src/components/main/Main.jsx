@@ -44,7 +44,7 @@ const Main = () => {
                 Gemini
               </a>
               <span style={{ paddingRight: "2px", cursor: "pointer" }}>
-                <CheckCircleOutlineIcon />
+                <CheckCircleOutlineIcon fontSize="small" />
               </span>
             </li>
             <li style={{ display: "flex" }}>
@@ -188,7 +188,7 @@ const Main = () => {
 />
 
             <div>
-              <img src={assets.gallery_icon} alt="" />
+              <img src={assets.gallery_icon} alt="" width="10"/>
               <img src={assets.mic_icon} alt=""/>
              {input ? <img
                 onClick={() => onSend()}
